@@ -1,0 +1,3 @@
+# rag-based-chatbot-with-3d-avatar
+This project implements a Retrieval-Augmented Generation (RAG)-based chatbot enhanced with a 3D avatar. The system combines state-of-the-art machine learning techniques for natural language understanding with a 3D avatar for interactive, immersive communication. The chatbot is designed for various use cases, providing information retrieval from a vector database, re-ranking responses, and delivering more accurate and context-aware results.
+The chatbot is built using Pinecone for retrieval, VRM models for avatar integration, and can process a range of multimodal data, including PDFs, CSVs and voice files.
