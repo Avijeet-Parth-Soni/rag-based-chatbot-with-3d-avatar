@@ -1,0 +1,13 @@
+{
+    "model_name": "en_US-hfc_female-medium.onnx",
+    "language": "en_US",
+    "sample_rate": 22050,
+    "num_channels": 1,
+    "bit_depth": 16,
+    "phoneme_set": "english",
+    "inference": {
+      "noise_scale": 0.667,
+      "length_scale": 1.0,
+      "noise_w": 0.8
+    }
+  }

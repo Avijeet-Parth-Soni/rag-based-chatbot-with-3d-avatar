@@ -1,0 +1,54 @@
+.vrm-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: -1; Place VRM behind other elements */
+}
+
+.vrm-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* 2. Chat history on the left */
+.chat-history {
+    position: fixed;
+    top: 1px;
+    right: 0;
+    width: 600px;
+    height: 83vh;
+    background: rgba(0,0,0,0); /* Semi-transparent black */
+    z-index: 9999; /* In front of VRM */
+    padding: 10px;
+    /* overflow-y: auto; */
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* 3. Chat bubbles */
+.chat-bubble {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+/* User message background with semi-transparency */
+.user {
+    background-color: rgba(33, 150, 243, 0.6); /* Semi-transparent blue for user */
+    align-self: flex-end;
+}
+
+/* Bot message background with semi-transparency */
+.assistant {
+    background-color: rgba(76, 175, 80, 0.6); /* Semi-transparent green for bot */
+    align-self: flex-start;
+}
