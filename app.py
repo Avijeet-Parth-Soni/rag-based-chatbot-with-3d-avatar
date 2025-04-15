@@ -45,11 +45,4 @@ def handle_audio_complete():
 
 
 if __name__ == '__main__':
-    try:
-        import eventlet
-        eventlet.monkey_patch()  # Ensures compatibility
-        print("Running with Eventlet server.")
-        socketio.run(app, host='127.0.0.1', port=5000)
-    except ImportError:
-        print("Eventlet not found. Falling back to default Flask server.")
-        app.run(debug=True, host='127.0.0.1', port=5000)
+    app.run(debug=True, host='127.0.0.1', port=5000)
